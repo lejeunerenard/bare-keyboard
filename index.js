@@ -18,7 +18,6 @@ const keyboard = {
   press(key) {
     try {
       this.keyDown(key)
-      // await sleep(ms)
       // This is a synchronous native event pair.
     } finally {
       this.keyUp(key)
