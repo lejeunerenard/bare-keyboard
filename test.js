@@ -1,6 +1,6 @@
 const test = require('brittle')
 const addon = require('.')
 
-test('hello', (t) => {
-  t.is(addon.hello(), 'Hello from C')
+test('press', (t) => {
+  t.execution(() => addon.press('h'))
 })
