@@ -9,7 +9,7 @@ add_bare_module(bare_keyboard)
 if(WIN32)
   target_sources(${bare_keyboard} PRIVATE
     binding.c
-    src/keyboard.cpp
+    src/win32.cpp
   )
 elseif(APPLE)
   target_sources(${bare_keyboard} PRIVATE
