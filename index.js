@@ -65,4 +65,4 @@ function normalize(key) {
   return aliases[upper] || upper
 }
 
-module.exports = { keyboard }
+module.exports = keyboard

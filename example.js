@@ -1,4 +1,4 @@
-const { keyboard } = require('./')
+const keyboard = require('./')
 
 const waitS = 5
 
