@@ -2,9 +2,9 @@ const { keyboard } = require('./')
 
 const waitS = 5
 
-async function run () {
+async function run() {
   console.log(`${waitS}s done`)
-  const msg = 'abcdefghijklmnopqrstuvwxyz1234567890.;\'\\,/'.split('')
+  const msg = "abcdefghijklmnopqrstuvwxyz1234567890.;'\\,/".split('')
   // issues: -"
   console.log('msg', msg)
   for (const char of msg) {
@@ -20,6 +20,6 @@ async function run () {
 console.log(`wait ${waitS}s`)
 setTimeout(run, waitS * 1000)
 
-function sleep (ms) {
+function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms))
 }
