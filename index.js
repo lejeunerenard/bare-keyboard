@@ -1,4 +1,4 @@
-const native = require('./binding')
+const binding = require('./binding')
 
 function check(ok, key, action) {
   if (!ok) {
@@ -8,11 +8,11 @@ function check(ok, key, action) {
 
 const keyboard = {
   keyDown(key) {
-    check(native.keyDown(normalize(key)), key, 'press')
+    check(binding.keyDown(normalize(key)), key, 'press')
   },
 
   keyUp(key) {
-    check(native.keyUp(normalize(key)), key, 'release')
+    check(binding.keyUp(normalize(key)), key, 'release')
   },
 
   press(key) {
