@@ -55,10 +55,14 @@ function normalize(key) {
 
   const aliases = {
     RETURN: 'ENTER',
-    ESC: 'ESCAPE',
+    ESCAPE: 'ESC',
     CONTROL: 'CTRL',
     CMD: 'META',
-    COMMAND: 'META'
+    COMMAND: 'META',
+    PERIOD: '.',
+    '=': 'EQUALS',
+    '[': 'LEFT_BRACKET',
+    ']': 'RIGHT_BRACKET'
   }
 
   const upper = key.toUpperCase()

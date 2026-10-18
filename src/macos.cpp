@@ -72,7 +72,7 @@ constexpr KeyMapping KEY_MAP[] = {
   {"TAB", 0x30},
   {"SPACE", 0x31},
   {"BACKSPACE", 0x33},
-  {"ESCAPE", 0x35},
+  {"ESC", 0x35},
 
   {"META", 0x37},
   {"SHIFT", 0x38},
